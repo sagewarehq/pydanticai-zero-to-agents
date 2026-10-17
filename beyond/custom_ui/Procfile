@@ -1,0 +1,2 @@
+backend: uv run uvicorn server:app --port 9100 --reload
+frontend: cd frontend && pnpm dev
