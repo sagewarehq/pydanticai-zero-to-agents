@@ -43,6 +43,7 @@ No key? [OpenRouter](https://openrouter.ai/) has free models.
 | 02 | Give it a tool | `@agent.tool_plain` | [02_dice.py](exercises/02_dice.py) | [A real API: Cebu weather](exercises/02_then_try.py) |
 | 03 | Answer in data | `output_type=` | [03_expense.py](exercises/03_expense.py) | [Split a barkada trip from a group chat](exercises/03_then_try.py) |
 | 04 | Put a face on it | `agent.to_web()` | [04_chat.py](exercises/04_chat.py) | [An expense logger that actually logs](exercises/04_then_try.py) |
+| 05 | Ask before acting | `requires_approval=True` | [05_approval.py](exercises/05_approval.py) | [Ask only above ₱1,000](exercises/05_then_try.py) |
 
 Run any of them with `uv run exercises/<file>.py`.
 
@@ -61,7 +62,7 @@ goes deeper.
 | Memory | Message history, saved to JSON across restarts | [memory.py](building_blocks/memory.py) | [message history](https://ai.pydantic.dev/message-history/) |
 | MCP | Build an MCP server, plug it into an agent | [mcp_server.py](building_blocks/mcp_server.py), [mcp_client.py](building_blocks/mcp_client.py) | [MCP](https://ai.pydantic.dev/mcp/overview/) |
 | Streaming | Text, partial structured output, and events | [streaming.py](building_blocks/streaming.py) | [streaming](https://ai.pydantic.dev/output/#streaming-text) |
-| Human in the loop | Approve big reimbursements before they run | [human_in_the_loop.py](building_blocks/human_in_the_loop.py) | [deferred tools](https://ai.pydantic.dev/deferred-tools/#human-in-the-loop-tool-approval) |
+| Human in the loop | Approve big payments before they run | [05_then_try.py](exercises/05_then_try.py), [human_in_the_loop.py](building_blocks/human_in_the_loop.py) | [deferred tools](https://ai.pydantic.dev/deferred-tools/#human-in-the-loop-tool-approval) |
 | Multi-agent | A planner delegating to typed specialists | [multi_agent.py](building_blocks/multi_agent.py) | [multi-agent](https://ai.pydantic.dev/multi-agent-applications/) |
 | Embeddings | RAG over your notes in ~40 lines | [embeddings_rag.py](building_blocks/embeddings_rag.py) | [embeddings](https://ai.pydantic.dev/embeddings/) |
 | Evals | Score an agent against test cases | [evals.py](building_blocks/evals.py) | [evals](https://ai.pydantic.dev/evals/) |
